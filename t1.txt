@@ -1,0 +1,1 @@
+breaking: The dependency `foo` has been updated to a new major version (2.0.0), which may include breaking changes. #major
