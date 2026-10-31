@@ -1,0 +1,12 @@
+name: GlueOps Standard Checks (test caller)
+# Calls the workflow from GlueOps/required-github-workflows#11 at its head commit.
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+  merge_group:
+permissions:
+  contents: read
+  pull-requests: read
+jobs:
+  checks:
+    uses: GlueOps/required-github-workflows/.github/workflows/glueops-basic-pr-checks.yml@60220edc329d09bf0097d38ade9fc21a7a8f72e8
